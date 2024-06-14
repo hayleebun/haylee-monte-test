@@ -16,8 +16,8 @@ token = str(os.getenv('TOKEN'))
 @client.event 
 async def on_ready(): 
     print("Logged in as a bot {0.user}".format(client))
-    #print(f'This is my Ec2_metadata.region:', ec2_metadata.region)
-    #print(f'This is my Ec2_metadata.instance.id:', ec2_metadata.instance_id)
+    print(f'This is my Ec2_metadata.region:', ec2_metadata.region)
+    print(f'This is my Ec2_metadata.instance.id:', ec2_metadata.instance_id)
 
 @client.event 
 async def on_message(message): 
